@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background-color: #0B1120;
+    color: #E8F0FF;
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+  }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: #0B1120; }
+  ::-webkit-scrollbar-thumb { background: #1A3A6B; border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #2D6FFF; }
+}
+
+@layer components {
+  .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.625rem 1rem; border-radius:.75rem; font-weight:500; font-size:.875rem; transition:all .2s; cursor:pointer; border:none; }
+  .btn:disabled { opacity:.4; cursor:not-allowed; }
+  .btn-primary { background:#2D6FFF; color:#fff; box-shadow:0 4px 14px rgba(45,111,255,.35); }
+  .btn-primary:hover:not(:disabled) { background:#1A56DB; }
+  .btn-secondary { background:#111C35; color:#94B4F0; border:1px solid #1A3A6B; }
+  .btn-secondary:hover:not(:disabled) { background:#1A2E55; }
+  .btn-danger { background:#EF4444; color:#fff; }
+  .btn-danger:hover:not(:disabled) { background:#DC2626; }
+  .btn-ghost { background:transparent; color:#4D7AC7; }
+  .btn-ghost:hover { background:#111C35; color:#E8F0FF; }
+  .card { background:#111C35; border:1px solid #1A3A6B; border-radius:1rem; }
+  .card:hover { border-color:#2D6FFF; }
+  .input { width:100%; padding:.75rem 1rem; background:#0D1626; border:1px solid #1A3A6B; color:#E8F0FF; border-radius:.75rem; font-size:.875rem; transition:all .2s; outline:none; }
+  .input:focus { border-color:#2D6FFF; box-shadow:0 0 0 3px rgba(45,111,255,.15); }
+  .input::placeholder { color:#3A5A9A; }
+  .badge { display:inline-flex; align-items:center; padding:.2rem .6rem; border-radius:9999px; font-size:.7rem; font-weight:600; }
+  .badge-blue   { background:rgba(45,111,255,.15); color:#7BA8F5; }
+  .badge-green  { background:rgba(16,185,129,.15); color:#34D399; }
+  .badge-red    { background:rgba(239,68,68,.15);  color:#F87171; }
+  .badge-yellow { background:rgba(245,158,11,.15); color:#FCD34D; }
+  .badge-gray   { background:#1A2E55; color:#94B4F0; }
+}
