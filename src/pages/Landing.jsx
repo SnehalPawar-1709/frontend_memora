@@ -31,7 +31,7 @@ export default function Landing() {
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center" style={{ boxShadow:'0 4px 12px rgba(45,111,255,.4)' }}>
               <Video className="w-4 h-4 text-white" />
             </div>
-            <span className="text-white font-bold text-xl tracking-tight">Memora</span>
+            <span className="text-white font-bold text-xl tracking-tight">AI POWERED SMART ONLINE MEETING PLATFORM</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-dark-300 hover:text-white text-sm transition-colors">Features</a>
