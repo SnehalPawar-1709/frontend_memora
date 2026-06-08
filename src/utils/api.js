@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL:  import.meta.env.VITE_API_URL || 'https://memora-backend.onrender.com',
+  baseURL:  import.meta.env.VITE_API_URL || 'https://memora-backend.onrender.com/api',
   timeout:  20000,
   headers:  { 'Content-Type': 'application/json' },
 });
